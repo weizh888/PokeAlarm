@@ -117,9 +117,18 @@ class TwilioAlarm(Alarm):
 
     # Send a SMS message
     def send_sms(self, to_num, from_num, body):
-        args = {
-            'to': to_num,
-            'from_': from_num,
-            'body': body
-        }
-        try_sending(log, self.connect, "Twilio", self.__client.messages.create, args)
+        if isinstance(to_num, list): #check for list of numbers to text
+            for num in to_num:
+                args = {
+                    'to': to_num,
+                    'from_': from_num,
+                    'body': body
+                }
+                try_sending(log, self.connect, "Twilio", self.__client.messages.create, args)
+        else:
+            args = {
+                'to': to_num,
+                'from_': from_num,
+                'body': body
+            }
+            try_sending(log, self.connect, "Twilio", self.__client.messages.create, args)
