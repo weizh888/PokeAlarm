@@ -24,35 +24,55 @@ class SlackAlarm(Alarm):
     _defaults = {
         'pokemon': {
             'username': "<pkmn>",
+<<<<<<< HEAD
             'icon_url': get_image_url("icons/<pkmn_id>.png"),
+=======
+            'icon_url': get_image_url("monsters/<pkmn_id_3>_<form_id_or_empty>.png"),
+>>>>>>> d8c001863d1ee199ebba660859c2b438a857543c
             'title': "A wild <pkmn> has appeared!",
             'url': "<gmaps>",
             'body': "Available until <24h_time> (<time_left>)."
         },
         'pokestop': {
             'username': "Pokestop",
+<<<<<<< HEAD
             'icon_url': get_image_url("icons/pokestop.png"),
+=======
+            'icon_url': get_image_url("stop/ready.png"),
+>>>>>>> d8c001863d1ee199ebba660859c2b438a857543c
             'title': "Someone has placed a lure on a Pokestop!",
             'url': "<gmaps>",
             'body': "Lure will expire at <24h_time> (<time_left>)."
         },
         'gym': {
             'username': "<new_team> Gym Alerts",
+<<<<<<< HEAD
             'icon_url': get_image_url("icons/gym_<new_team_id>.png"),
+=======
+            'icon_url': get_image_url("gyms/<new_team_id>.png"),
+>>>>>>> d8c001863d1ee199ebba660859c2b438a857543c
             'title': "A Team <old_team> gym has fallen!",
             'url': "<gmaps>",
             'body': "It is now controlled by <new_team>."
         },
         'egg': {
             'username': "Egg",
+<<<<<<< HEAD
             'icon_url': get_image_url("icons/egg_<raid_level>.png"),
+=======
+            'icon_url': get_image_url("eggs/<raid_level>.png"),
+>>>>>>> d8c001863d1ee199ebba660859c2b438a857543c
             'title': "A level <raid_level> raid is incoming!",
             'url': "<gmaps>",
             'body': "The egg will hatch <begin_24h_time> (<begin_time_left>)."
         },
         'raid': {
             'username': "<pkmn> Raid",
+<<<<<<< HEAD
             'icon_url': get_image_url("icons/<pkmn_id>.png"),
+=======
+            'icon_url': get_image_url("monsters/<pkmn_id_3>_<form_id_or_empty>.png"),
+>>>>>>> d8c001863d1ee199ebba660859c2b438a857543c
             'title': "A Raid is available against <pkmn>!",
             'url': "<gmaps>",
             'body': "The raid is available until <24h_time> (<time_left>)."

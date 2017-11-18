@@ -25,7 +25,11 @@ class FacebookPageAlarm(Alarm):
     _defaults = {
         'pokemon': {
             'message': "A wild <pkmn> has appeared!",
+<<<<<<< HEAD
             'image': get_image_url("icons/<pkmn_id>.png"),
+=======
+            'image': get_image_url("monsters/<pkmn_id_3>_<form_id_or_empty>.png"),
+>>>>>>> d8c001863d1ee199ebba660859c2b438a857543c
             'link': "<gmaps>",
             'name': "<pkmn>",
             'description': "Available until <24h_time> (<time_left>)",
@@ -33,7 +37,11 @@ class FacebookPageAlarm(Alarm):
         },
         'pokestop': {
             'message': "Someone has placed a lure on a Pokestop!",
+<<<<<<< HEAD
             'image': get_image_url("icons/pokestop.png"),
+=======
+            'image': get_image_url("stop/ready.png"),
+>>>>>>> d8c001863d1ee199ebba660859c2b438a857543c
             'link': "<gmaps>",
             'name': "Lured Pokestop",
             'description': "Lure will expire at <24h_time> (<time_left>)",
@@ -41,7 +49,11 @@ class FacebookPageAlarm(Alarm):
         },
         'gym': {
             'message': "A Team <old_team> gym has fallen!",
+<<<<<<< HEAD
             'image': get_image_url("icons/gym_<new_team_id>.png"),
+=======
+            'image': get_image_url("gyms/<new_team_id>.png"),
+>>>>>>> d8c001863d1ee199ebba660859c2b438a857543c
             'link': "<gmaps>",
             'name': "<old_team> gym fallen",
             'description': "It is now controlled by <new_team>",
@@ -49,7 +61,11 @@ class FacebookPageAlarm(Alarm):
         },
         'egg': {
             'message': "A level <raid_level> raid is upcoming!",
+<<<<<<< HEAD
             'image': get_image_url("icons/egg_<raid_level>.png"),
+=======
+            'image': get_image_url("eggs/<raid_level>.png"),
+>>>>>>> d8c001863d1ee199ebba660859c2b438a857543c
             'link': "<gmaps>",
             'name': 'Egg',
             'description': "The egg will hatch <begin_24h_time> (<begin_time_left>).",
@@ -57,7 +73,11 @@ class FacebookPageAlarm(Alarm):
         },
         'raid': {
             'message': "A Raid is available against <pkmn>!",
+<<<<<<< HEAD
             'image': get_image_url("icons/<pkmn_id>.png"),
+=======
+            'image': get_image_url("monsters/<pkmn_id_3>_<form_id_or_empty>.png"),
+>>>>>>> d8c001863d1ee199ebba660859c2b438a857543c
             'link': "<gmaps>",
             'name': 'Raid',
             'description': "The raid is available until <24h_time> (<time_left>).",
